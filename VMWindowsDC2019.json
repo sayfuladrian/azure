@@ -92,7 +92,7 @@
     },
     "vmName": {
       "type": "string",
-      "defaultValue": "simple-vm",
+      "defaultValue": "VMFE1",
       "metadata": {
         "description": "Name of the virtual machine."
       }
@@ -100,13 +100,16 @@
   },
   "variables": {
     "storageAccountName": "[format('bootdiags{0}', uniqueString(resourceGroup().id))]",
-    "nicName": "myVMNic",
+    "nicName": "VMFE1NIC1",
     "location": "australiaeast",
     "addressPrefix": "10.0.0.0/16",
     "subnetName": "Subnet",
     "subnetPrefix": "10.0.1.0/24",
     "virtualNetworkName": "VNetSEAsia",
-    "networkSecurityGroupName": "NSGFE"
+    "networkSecurityGroupName": "NSGFE",
+      "adminUsername": "localadmin",
+      "adminPassword": "2rDNwvfH4321",
+      "resourcegroup": "SEAsia"
   },
   "resources": [
     {

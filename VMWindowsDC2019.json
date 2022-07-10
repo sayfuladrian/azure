@@ -31,7 +31,7 @@
     },
     "publicIpName": {
       "type": "string",
-      "defaultValue": "VM1PubIP1",
+      "defaultValue": "myPublicIP",
       "metadata": {
         "description": "Name for the Public IP used to access the Virtual Machine."
       }
@@ -85,7 +85,7 @@
     },
     "location": {
       "type": "string",
-      "defaultValue": "[resourceGroup().location]",
+      "defaultValue": "[variables('location')]",
       "metadata": {
         "description": "Location for all resources."
       }
@@ -100,8 +100,11 @@
   },
   "variables": {
     "storageAccountName": "[format('bootdiags{0}', uniqueString(resourceGroup().id))]",
-    "nicName": "VM1NIC1",
-    "subnetName": "SubVNetSEAsia1",
+    "nicName": "myVMNic",
+    "location": "australiaeast",
+    "addressPrefix": "10.0.0.0/16",
+    "subnetName": "Subnet",
+    "subnetPrefix": "10.0.1.0/24",
     "virtualNetworkName": "VNetSEAsia",
     "networkSecurityGroupName": "NSGFE"
   },
@@ -189,7 +192,7 @@
       "properties": {
         "ipConfigurations": [
           {
-            "name": "ipconfig1",
+            "name": "VM1NIC1",
             "properties": {
               "privateIPAllocationMethod": "Dynamic",
               "publicIPAddress": {

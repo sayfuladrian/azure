@@ -88,7 +88,6 @@
     }
   },
   "variables": {
-    "storageAccountName": "[format('bootdiags{0}', uniqueString(resourceGroup().id))]",
     "nicName": "Nic1VM1SubVNetAsia1",
     "location": "australiaeast",
     "addressPrefix": "10.0.0.0/16",

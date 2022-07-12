@@ -107,9 +107,6 @@
     "subnetPrefix": "10.0.1.0/24",
     "virtualNetworkName": "VNetSEAsia",
     "networkSecurityGroupName": "NSGFE",
-      "adminUsername": "localadmin",
-      "adminPassword": "2rDNwvfH4321",
-      "resourcegroup": "SEAsia"
   },
   "resources": [
     {

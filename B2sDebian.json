@@ -121,12 +121,12 @@
       "properties": {
         "securityRules": [
           {
-            "name": "default-allow-3389",
+            "name": "default-allow-ssh",
             "properties": {
-              "priority": 1000,
+              "priority": 199,
               "access": "Allow",
               "direction": "Inbound",
-              "destinationPortRange": "3389",
+              "destinationPortRange": "22",
               "protocol": "Tcp",
               "sourcePortRange": "*",
               "sourceAddressPrefix": "*",

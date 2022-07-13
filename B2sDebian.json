@@ -3,55 +3,55 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "location": {
-            "value": "australiaeast"
+            "type": "string"
         },
         "networkInterfaceName": {
-            "value": "rhelvm1367"
+            "type": "string"
         },
         "subnetName": {
-            "value": "SubVNetSEAsia1"
+            "type": "string"
         },
         "virtualNetworkId": {
-            "value": "/subscriptions/5cb16a54-7e8b-4e84-8f6c-9908b6fefebc/resourceGroups/SEAsia/providers/Microsoft.Network/virtualNetworks/VNetSEAsia"
+            "type": "string"
         },
         "publicIpAddressName": {
-            "value": "rhelVM1-ip"
+            "type": "string"
         },
         "publicIpAddressType": {
-            "value": "Dynamic"
+            "type": "string"
         },
         "publicIpAddressSku": {
-            "value": "Basic"
+            "type": "string"
         },
         "pipDeleteOption": {
-            "value": "Detach"
+            "type": "string"
         },
         "virtualMachineName": {
-            "value": "rhelVM1"
+            "type": "string"
         },
         "virtualMachineComputerName": {
-            "value": "rhelVM1"
+            "type": "string"
         },
         "virtualMachineRG": {
-            "value": "SEAsia"
+            "type": "string"
         },
         "osDiskType": {
-            "value": "StandardSSD_LRS"
+            "type": "string"
         },
         "osDiskDeleteOption": {
-            "value": "Delete"
+            "type": "string"
         },
         "virtualMachineSize": {
-            "value": "Standard_B2ms"
+            "type": "string"
         },
         "nicDeleteOption": {
-            "value": "Detach"
+            "type": "string"
         },
         "adminUsername": {
-            "value": "localadmin"
+            "type": "string"
         },
         "adminPassword": {
-            "value": "2rDNwvfH4321"
+            "type": "secureString"
         }
     },
     "variables": {

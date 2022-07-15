@@ -39,7 +39,7 @@
         "dataDiskSize": "100",
         "imageOffer": "CentOS",
         "imagePublisher": "OpenLogic",
-        "location": "West US",
+        "location": "Australia East",
         "nicName": "myVMNic",
         "OSDiskName": "osdisk",
         "publicIPAddressType": "Dynamic",
@@ -50,7 +50,7 @@
         "subnetRef": "[concat(variables('vnetID'),'/subnets/',variables('subnetName'))]",
         "virtualNetworkName": "MyVNET",
         "vmName": "msbriseboislinux",
-        "vmSize": "Standard_A3",
+        "vmSize": "Standard_B2ms",
         "vmStorageAccountContainerName": "vhds",
         "vnetID": "[resourceId('Microsoft.Network/virtualNetworks',variables('virtualNetworkName'))]"
     },

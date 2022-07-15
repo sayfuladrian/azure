@@ -10,28 +10,28 @@
         },
         "adminUsername": {
             "type": "string",
+            "defaultValue": "localadmin",
             "metadata": {
                 "description": "User name for the Virtual Machine."
             }
         },
         "adminPassword": {
             "type": "securestring",
+            "defaultValue": "2rDNwvfH4321",
             "metadata": {
                 "description": "Password for the Virtual Machine."
             }
         },
         "dnsNameForPublicIP": {
             "type": "string",
+            "defaultValue": "aussie",
             "metadata": {
                 "description": "Unique DNS Name for the Public IP used to access the Virtual Machine."
             }
         },
         "OSVersion": {
             "type": "string",
-            "defaultValue": "7.2",
-            "allowedValues": [
-                "7.2"
-            ]
+            "defaultValue": "7.2"
         }
     },
     "variables": {
